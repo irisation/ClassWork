@@ -24,6 +24,7 @@ public class CalculatorTest {
     }
     @Test(dataProviderClass = DataProviders.class, dataProvider = "calcData")
     public void dataTest(int value1, int value2, int result){
+        
             Assert.assertEquals(result, calc.sum(value1, value2));
 
     }
